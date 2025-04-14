@@ -1,190 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+
+   <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Diamond Signs</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #d6d6d6;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      width: 600px;
-      background-color: white;
-      border: 10px solid black;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .main-sign-box {
-      border: 2px solid #000;
-      background-color: #fff;
-      padding: 10px;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .main-sign {
-      width: 300px;
-      height: auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-    }
-
-    .empty-box,
-    .coord-box,
-    .grid-group {
-      border: 2px solid #000;
-      background-color: #fff;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 60px;
-    }
-
-    .coord-box {
-      font-family: monospace;
-      font-size: 14px;
-      flex-direction: column;
-      line-height: 1.4;
-    }
-
-    .grid-group {
-      flex-direction: column;
-      gap: 5px;
-      padding: 0;
-    }
-
-    .image-box,
-    .label-box {
-      width: 100%;
-      border: 2px solid #000;
-      padding: 5px;
-      background-color: #fff;
-    }
-
-    .image-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .label {
-      font-size: 12px;
-      text-transform: lowercase;
-      margin: 0;
-    }
-  </style>
+  <title>Diamond Signs Template</title>
 </head>
 <body>
-  <div class="container">
-    <div class="main-sign-box">
-      <img src="C:\Users\User\Downloads\midterm css\diamond.jpg" class="main-sign" alt="Diamond Sign">
-    </div>
 
-    <div class="grid">
-      
-      <div class="empty-box"></div>
-      <div class="empty-box"></div>
-      <div class="coord-box">
-        N37°24.500'<br>
-        W122°09.364'
-      </div>
-      <div class="empty-box"></div>
-      <div class="empty-box"></div>
+  <table align="center" border="1" cellspacing="10" cellpadding="10">
+    <!-- Top Main Sign -->
+    <tr>
+      <td colspan="5" align="center" style="border: 1px solid black;">
+        <img src="diamond-sign.jpg" width="250">
+      </td>
+    </tr>
 
-      
-      <div class="grid-group">
-        <div class="label-box">
-          <img src= "C:\Users\User\Downloads\midterm css\484509000_1370868520622495_4836850251086026781_n.png" alt="arrows" width="100" height:"100">
-        </div>
-        <div class="label-box">
-          <p class="label">arrows</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="C:\Users\User\Downloads\midterm css\490996866_1351353249420263_3837955320102429194_n.png" alt="intersections" width="100" height:"100">
-        </div>
-        <div class="label-box">
-          <p class="label">intersections</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="C:\Users\User\Downloads\midterm css\483009092_648466807822325_3146876917618402749_n.png" alt="lanes" width="100" height:"100">
-        </div>
-        <div class="label-box">
-          <p class="label">lanes</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="C:\Users\User\Downloads\midterm css\483145514_1127285946081144_8350784691869577974_n.png" alt="road status" width="100" height:"100">
-        </div>
-        <div class="label-box">
-          <p class="label">road status</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="C:\Users\User\Downloads\midterm css\489887959_1387394208957597_1242206842555957678_n.png" alt="temporary" width="100" height:"100">
-        </div>
-        <div class="label-box">
-          <p class="label">temporary</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="people.jpg" alt="people">
-        </div>
-        <div class="label-box">
-          <p class="label">people</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="critters.jpg" alt="critters">
-        </div>
-        <div class="label-box">
-          <p class="label">critters</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="vehicles.jpg" alt="vehicles">
-        </div>
-        <div class="label-box">
-          <p class="label">vehicles</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="entrances.jpg" alt="entrances">
-        </div>
-        <div class="label-box">
-          <p class="label">entrances</p>
-        </div>
-      </div>
-      <div class="grid-group">
-        <div class="image-box">
-          <img src="weather.jpg" alt="weather">
-        </div>
-        <div class="label-box">
-          <p class="label">weather</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- Coordinates (Stacked) -->
+    <tr>
+      <td colspan="5" align="center" style="border: 1px solid black;">
+        <strong>
+          N37°24.500'<br>
+          W122°09.364
+        </strong>
+      </td>
+    </tr>
+
+    <!-- Row 1 -->
+    <tr align="center">
+      <td style="border: 1px solid black;">
+        <img src="arrow.jpg" width="60"><br>
+        Arrows
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="interactions.jpg" width="60"><br>
+        Interactions
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="lanes.jpg" width="60"><br>
+        Lanes
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="road-status.jpg" width="60"><br>
+        Road Status
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="temporary.jpg" width="60"><br>
+        Temporary
+      </td>
+    </tr>
+
+    <!-- Row 2 -->
+    <tr align="center">
+      <td style="border: 1px solid black;">
+        <img src="people.jpg" width="60"><br>
+        People
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="critters.jpg" width="60"><br>
+        Critters
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="vehicles.jpg" width="60"><br>
+        Vehicles
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="hospital.jpg" width="60"><br>
+        Entrances
+      </td>
+      <td style="border: 1px solid black;">
+        <img src="weather.jpg" width="60"><br>
+        Weather
+      </td>
+    </tr>
+  </table>
+
 </body>
 </html>
